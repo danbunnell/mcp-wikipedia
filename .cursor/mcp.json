@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "wikipedia": {
+      "name": "Wikipedia MCP",
+      "description": "Fetches Wikipedia content for a given topic",
+      "version": "1.0.0",
+      "url": "http://localhost:5000/mcp",
+      "endpoint": {
+        "method": "POST",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "topic": "{{input}}"
+        },
+        "response": {
+          "type": "json",
+          "path": "data.content"
+        }
+      }
+    }
+  }
+} 
